@@ -20,7 +20,7 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600&display=swap" as="style">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript>
@@ -33,10 +33,13 @@
      <header class="header">
         <div class="container">
             <div class="header-content">
+                <button class="nav-toggle" aria-label="Mở menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                  </button>     
                 <div class="logo-section">
-                    <a href="index.html" class="logo-section">
+                    <a href="./" class="logo-section">
                         <div class="logo">
-                          <img src="Logo Thịnh Ký.png" alt="Thịnh Ký Logo">
+                          <img src="../Logo Thịnh Ký.png" alt="Thịnh Ký Logo">
                         </div>
                         <div class="logo-text">
                           <h1>Thịnh Ký</h1>
@@ -109,7 +112,7 @@
                         <i class="fas fa-clock"></i>
                     </div>
                     <h3>Giờ mở cửa</h3>
-                    <p>Thứ 2 - Chủ nhật<br>10:00 - 22:00</p>
+                    <p>Thứ 2 - Chủ nhật<br>6:30 - 20:30</p>
                     <span class="info-note">Mở cửa hàng ngày</span>
                 </div>
             </div>
@@ -187,76 +190,15 @@
             </div>
         </div>
     </section>
-
-    <!-- FAQ Section
-    <section class="faq section-base">
-        <div class="container">
-            <div class="section-header">
-                <h2>Câu hỏi thường gặp</h2>
-                <p>Những thông tin hữu ích cho bạn</p>
-            </div>
-            
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Làm thế nào để đặt bàn?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Bạn có thể đặt bàn bằng cách gọi điện thoại, gửi email hoặc sử dụng form đặt bàn trực tuyến trên website. Chúng tôi sẽ xác nhận trong vòng 30 phút.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Nhà hàng có phục vụ tiệc cưới không?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Có, chúng tôi có phòng riêng và sân vườn phù hợp cho các sự kiện đặc biệt. Vui lòng liên hệ trước để được tư vấn chi tiết.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Có menu cho người ăn chay không?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Có, chúng tôi có nhiều món chay ngon và đa dạng. Vui lòng thông báo khi đặt bàn để chúng tôi chuẩn bị tốt nhất.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Nhà hàng có chỗ đậu xe không?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Có, chúng tôi có bãi đậu xe miễn phí cho khách hàng với sức chứa 50 xe ô tô và 100 xe máy.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
+    <!-- Footer -->
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <!-- <div class="footer-logo">
-                        <div class="logo">
-                            <img src="Logo Thịnh Ký.png" alt="Thịnh Ký Logo">
-                        </div>
-                        <div class="logo-text">
-                            <h3>Thịnh Ký</h3>
-                            <p>Tân Phú</p>
-                        </div>
-                    </div> -->
                     <div class="logo-section">
                         <div class="logo">
-                            <img src="Logo Thịnh Ký.png" alt="Thịnh Ký Logo">
+                            <img src="../Logo Thịnh Ký.png" alt="Thịnh Ký Logo">
                         </div>
                         <div class="logo-text">
                             <h1>Thịnh Ký</h1>
@@ -267,10 +209,10 @@
                 <div class="footer-section">
                     <h4>Liên kết nhanh</h4>
                     <ul class="footer-links">
-                        <li><a href="#home">Trang chủ</a></li>
-                        <li><a href="#menu">Thực đơn</a></li>
-                        <li><a href="#about">Về chúng tôi</a></li>
-                        <li><a href="#contact">Liên hệ</a></li>
+                        <li><a href="../">Trang chủ</a></li>
+                        <li><a href="../thucdon/">Thực đơn</a></li>
+                        <li><a href="../vechungtoi/">Về chúng tôi</a></li>
+                        <li><a href="../lienhe/">Liên hệ</a></li>
                     </ul>
                 </div>
                 
@@ -302,12 +244,6 @@
                         <a href="https://www.facebook.com/profile.php?id=61581438242174" class="social-link">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <!-- <a href="#" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-youtube"></i>
-                        </a> -->
                     </div>
                 </div>
             </div>
