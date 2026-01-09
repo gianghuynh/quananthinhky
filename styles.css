@@ -1993,3 +1993,180 @@ img{max-width:100%;height:auto;display:block}
     .price, .menu-price{ font-size: 14px; padding-top: 6px; margin-top: 8px; }
   }
   
+
+/* ==== MENU BOARD FULL WIDTH STYLE – EACH IMAGE ONE LINE ==== */
+
+.menu-board-wrapper {
+    display: flex;
+    flex-direction: column; /* mỗi ảnh 1 dòng */
+    align-items: center;
+    gap: 50px; /* khoảng cách giữa 2 ảnh */
+    padding: 0 10px;
+  }
+  
+  /* Card chứa ảnh */
+  .menu-board-card {
+    width: 100%;
+    max-width: 1100px;   /* ảnh to hơn khi xem trên laptop */
+    background: #fffbe9;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    border: 2px solid rgba(148,120,47,0.25);
+    transition: all 0.25s ease;
+  }
+  
+  .menu-board-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+    border-color: rgba(148,120,47,0.45);
+  }
+  
+  /* Ảnh to – tự co theo khung */
+  .menu-board-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    cursor: zoom-in;
+  }
+  
+  /* Caption */
+  .menu-board-card figcaption {
+    margin-top: 14px;
+    color: #7b4a17;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  /* Mobile tối ưu */
+  @media (max-width: 768px) {
+    .menu-board-card {
+      max-width: 100%;
+      padding: 14px;
+      border-radius: 14px;
+    }
+  
+    .menu-board-card img {
+      border-radius: 10px;
+    }
+  
+    .menu-board-card figcaption {
+      font-size: 14px;
+    }
+  }
+  
+  
+  
+  /* ====== MODAL PHÓNG TO ẢNH ====== */
+  
+  .menu-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+  }
+  
+  .menu-modal.open {
+    display: flex;
+  }
+  
+  .menu-modal__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+  }
+  
+  .menu-modal__content {
+    position: relative;
+    z-index: 1;
+    max-width: min(1000px, 96vw);
+    max-height: 90vh;
+    padding: 10px;
+    background: #111827;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+  }
+  
+  .menu-modal__content img {
+    display: block;
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 10px;
+  }
+  
+  /* nút X đóng */
+  .menu-modal__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 34px;
+    height: 34px;
+    border-radius: 999px;
+    border: 0;
+    background: rgba(17, 24, 39, 0.8);
+    color: #f9fafb;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-modal__close:hover {
+    background: rgba(31, 41, 55, 0.95);
+  }
+  
+  /* khi modal mở thì khoá scroll nền */
+  body.menu-modal-open {
+    overflow: hidden;
+  }
+  
+  /* ====== RESPONSIVE: MOBILE & TABLET ====== */
+  
+  @media (max-width: 1024px) {
+    .menu-board-wrapper {
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .menu-page {
+      padding-top: 110px;
+      padding-bottom: 40px;
+    }
+  
+    .menu-board-wrapper {
+      grid-template-columns: 1fr; /* 2 ảnh xếp dọc trên mobile */
+    }
+  
+    .menu-board-card {
+      padding: 12px;
+      border-radius: 14px;
+    }
+  
+    .menu-board-card img {
+      border-radius: 10px;
+    }
+  
+    .menu-board-card figcaption {
+      font-size: 13px;
+    }
+  
+    .menu-board-note {
+      font-size: 13px;
+    }
+  
+    .menu-modal__content {
+      max-width: 96vw;
+      max-height: 88vh;
+    }
+  
+    .menu-modal__content img {
+      max-height: 78vh;
+    }
+  }
+  
