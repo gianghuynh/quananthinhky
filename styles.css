@@ -42,7 +42,7 @@ body::before {
    ======================================== */
 .header {
     background: #275a75;
-    padding: 18px 0;
+    padding: 10px 0;
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
     position: fixed;
     top: 0;
@@ -134,7 +134,7 @@ body::before {
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
