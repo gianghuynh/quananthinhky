@@ -2082,7 +2082,7 @@ img{max-width:100%;height:auto;display:block}
   .menu-modal__content {
     position: relative;
     z-index: 1;
-    max-width: min(1000px, 96vw);
+    max-width: min(2000px, 96vw);
     max-height: 90vh;
     padding: 10px;
     background: #111827;
