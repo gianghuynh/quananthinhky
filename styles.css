@@ -555,7 +555,7 @@ body::before {
     z-index: 2;
 }
 
-.story-text h2 {
+.story-text h2,h1 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     font-weight: 600;
@@ -1221,6 +1221,7 @@ body::before {
 }
 
 .about-hero-content h1 {
+    color:wheat;
     font-family: 'Playfair Display', serif;
     font-size: 64px;
     font-weight: 700;
@@ -1247,6 +1248,7 @@ body::before {
 }
 
 .contact-hero-content h1 {
+    color: wheat;
     font-family: 'Playfair Display', serif;
     font-size: 64px;
     font-weight: 700;
